@@ -1,0 +1,40 @@
+import java.awt.GridLayout;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JTextField;
+
+
+public class Calc extends JFrame {
+public static JTextField f = new JTextField(10); 
+public static JButton b = new JButton("1");
+public static JButton c = new JButton("2");
+public static JButton d = new JButton("3");
+public static JButton i= new JButton("4");
+public static JButton g= new JButton("5");
+public static JButton w= new JButton("6");
+public static JButton z= new JButton("7");
+public static JButton x= new JButton("8");
+public static JButton t= new JButton("9");  
+public static JButton y= new JButton("0");
+public static JButton o=new JButton("=");
+
+	public static void main(String[] args) {
+		Calc a = new Calc();
+		a.setVisible(true);
+		a.setSize(300,300);
+		a.setTitle("Мой калькулятор");
+		a.add(f);
+		a.add(b);
+		a.setLayout(new GridLayout(3,3));
+		a.add(c);
+		a.add(d);
+		a.add(i);
+		a.add(g);
+		a.add(w);
+		a.add(z);
+		a.add(y);
+		a.add(t);
+		a.add(o);
+	}
+
+}
